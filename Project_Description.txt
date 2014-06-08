@@ -1,0 +1,30 @@
+Design and implement a parametric cache simulator and use it to design data caches suited to solve systems of linear equations. The simulator should model a memory
+hierarchy with data and victim cache. Assume the LRU replacement policy and (i) write back with write allocate, and (ii) write through with no-write allocate policies. 
+
+
+
+The simulator should accept the following inputs: 
+• Date cache size in bytes
+• Associativity
+• Block size in bytes
+• Write policy
+• Victim cache size in blocks. Note that if this input is zero then the system does 
+not have a victim cache.
+
+
+
+The simulator should output at least the following statistics: 
+
+
+ 
+• Number of L1 reads
+• Number of L1 read misses
+• Number of victim cache reads
+• Number of victim cache read misses
+• Number of L1 writes
+• Number of L1 write misses
+• Number of victim cache writes
+• Number of victim cache write misses
+• L1 miss rate
+• Victim cache miss rate
+• Total memory traffic to/from main memory 
